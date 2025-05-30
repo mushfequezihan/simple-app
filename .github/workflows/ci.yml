@@ -34,7 +34,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         args: >
-          -Dsonar.projectKey=yourusername_simple-app
+          -Dsonar.projectKey=simple-app
           -Dsonar.organization=your-org-name
           -Dsonar.python.version=3.9
 
