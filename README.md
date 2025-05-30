@@ -1,7 +1,5 @@
 # simple-app
 
-simple-app/
-├── app.py
-├── requirements.txt
-└── tests/
-    └── test_app.py
+app.py: Main application file
+requirements.txt: Dependency list
+tests/test_app.py: Test file inside the tests directory
