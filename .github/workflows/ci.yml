@@ -24,3 +24,20 @@ jobs:
 
     - name: Run tests
       run: pytest
+
+    - name: Cache SonarCloud packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.sonar/cache
+        key: ${{ runner.os }}-sonar
+
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        args: >
+          -Dsonar.projectKey=yourusername_simple-app
+          -Dsonar.organization=your-org-name
+          -Dsonar.python.version=3.9
+
