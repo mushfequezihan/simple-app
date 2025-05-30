@@ -35,6 +35,6 @@ jobs:
       with:
         args: >
           -Dsonar.projectKey=simple-app
-          -Dsonar.organization=your-org-name
+          -Dsonar.organization=mushfequezihan
           -Dsonar.python.version=3.9
 
